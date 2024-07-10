@@ -15,7 +15,7 @@ By following the TDD approach, we will write tests first and then implement the 
 - IntelliJ IDEA Community Edition, which can be downloaded from [here](https://www.jetbrains.com/idea/download/).
   - Follow Jetbrains install instructions specific to your OS. 
 - Follow the instructions in [lib/CLASSPATH.md](lib/CLASSPATH.md)
-
+- Install the Codiumate Plugin from the Marketplace
 ### Prerequisites
 
 - Basic computer skills. 
