@@ -12,11 +12,10 @@ By following the TDD approach, we will write tests first and then implement the 
 
 ## Getting Started
 - git clone or download this repository.   
-- Visual Studio Code, which can be downloaded from [here](https://code.visualstudio.com/download#).
-  - Follow vscode install instructions specific to your OS. 
+- IntelliJ IDEA Community Edition, which can be downloaded from [here](https://www.jetbrains.com/idea/download/).
+  - Follow Jetbrains install instructions specific to your OS. 
 - Follow the instructions in [lib/CLASSPATH.md](lib/CLASSPATH.md)
-- Install the Java Extension from the [Marketplace here](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
-- Install the Codiumate Extension from the [Marketplace here](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)  
+- Install the Codiumate Plugin from the [Marketplace here](https://plugins.jetbrains.com/plugin/21206-codiumate--code-test-and-review-with-confidence--by-codiumai)  
 ### Prerequisites
 
 - Basic computer skills. 
