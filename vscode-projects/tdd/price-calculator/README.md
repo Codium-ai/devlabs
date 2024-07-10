@@ -15,7 +15,8 @@ By following the TDD approach, we will write tests first and then implement the 
 - Visual Studio Code, which can be downloaded from [here](https://code.visualstudio.com/download#).
   - Follow vscode install instructions specific to your OS. 
 - Follow the instructions in [lib/CLASSPATH.md](lib/CLASSPATH.md)
-- Install the Codiumate Plugin from the [Marketplace here](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)  
+- Install the Java Extension from the [Marketplace here](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+- Install the Codiumate Extension from the [Marketplace here](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)  
 ### Prerequisites
 
 - Basic computer skills. 
