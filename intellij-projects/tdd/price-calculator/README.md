@@ -11,7 +11,7 @@ By following the TDD approach, we will write tests first and then implement the 
 - Apply discounts
 
 ## Getting Started
-
+- git clone or download this repository.   
 - IntelliJ IDEA Community Edition, which can be downloaded from [here](https://www.jetbrains.com/idea/download/)
   - Follow Jetbrains install instructions. 
 - Follow the instructions in `lib/CLASSPATH.md`
@@ -41,4 +41,5 @@ price-calculator
 ├── build.gradle
 └── README.md
 ```
+
 
