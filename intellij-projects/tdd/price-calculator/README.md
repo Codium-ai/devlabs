@@ -12,13 +12,13 @@ By following the TDD approach, we will write tests first and then implement the 
 
 ## Getting Started
 - git clone or download this repository.   
-- IntelliJ IDEA Community Edition, which can be downloaded from [here](https://www.jetbrains.com/idea/download/)
-  - Follow Jetbrains install instructions. 
-- Follow the instructions in `lib/CLASSPATH.md`
+- IntelliJ IDEA Community Edition, which can be downloaded from [here](https://www.jetbrains.com/idea/download/).
+  - Follow Jetbrains install instructions specific to your OS. 
+- Follow the instructions in [lib/CLASSPATH.md](lib/CLASSPATH.md)
 
 ### Prerequisites
 
-- Basic computer skills 
+- Basic computer skills. 
 
 ### Project Structure
 ```
@@ -29,16 +29,18 @@ price-calculator
 │   │       └── com
 │   │           └── example
 │   │               └── calculator
-│   │                   ├── PriceCalculator.java
+│   │                   ├── (PriceCalculator.java) <- what we create
 │   ├── test
 │       └── java
 │           └── com
 │               └── example
 │                   └── calculator
-│                       ├── PriceCalculatorTest.java
+│                       ├── (PriceCalculatorTest.java) <- what we create
 ├── lib
 │   └── CLASSPATH.md
-├── build.gradle
+│   └── (junit-platform-console-standalone-1.9.3.jar) <- download see CLASSPATH.md
+│      
+├── LICENSE
 └── README.md
 ```
 
