@@ -3,5 +3,5 @@
 - copy junit-platform-console-standalone-1.9.3.jar to lib directory.
     -  cp ${PATH_TO_DOWNLOAD}/junit-platform-console-standalone-1.9.3.jar .
     -  ```shell
-       cp ~/Downloads/junit-platform-console-standalone-1.9.3.jar . 
+       cp ~/Downloads/junit-platform-console-standalone-1.9.3.jar lib/ 
        ```
