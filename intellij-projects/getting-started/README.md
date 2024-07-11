@@ -2,8 +2,7 @@
 
 ## Introduction
 
-This getting started project will demonstrate with the video how to install the extension for Java and Codiumate and plan 
-a basic calculate Fibonacci method in java.
+This getting started project will demonstrate with the video how to install Codiumate Plugin and plan a Fibonacci method in java.
 
 ## Features
 
@@ -11,10 +10,9 @@ a basic calculate Fibonacci method in java.
 
 ## Getting Started
 - git clone or download this repository.   
-- Visual Studio Code, which can be downloaded from [here](https://code.visualstudio.com/download#).
+- IntelliJ IDEA Community Edition, which can be downloaded from [here](https://www.jetbrains.com/idea/download).
   - Follow vscode install instructions specific to your OS. 
-- Install the Java Extension from the [Marketplace here](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
-- Install the Codiumate Extension from the [Marketplace here](https://marketplace.visualstudio.com/items?itemName=Codium.codium)  
+- Install the Codiumate Plugin from the [Marketplace here](https://plugins.jetbrains.com/plugin/21206-codiumate--code-test-and-review-with-confidence--by-codiumai)  
 ### Prerequisites
 
 - Basic computer skills. 
