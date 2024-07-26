@@ -13,9 +13,13 @@ The reactJS weather application is for demonstration purpose.
 * Ensure chromedriver is installed.
   * https://googlechromelabs.github.io/chrome-for-testing/#stable
     * I used https://storage.googleapis.com/chrome-for-testing-public/127.0.6533.72/mac-arm64/chromedriver-mac-arm64.zip
+* Add environment variable webdriver.chrome.driver=/{YOUR_PATH}/chromedriver
+  * The run/debug configuration screen in IntelliJ
 * Ensure you have Docker Desktop installed.
   * https://www.docker.com/products/docker-desktop/
 * If you do not have the Codiumate installed recommend watching [Getting Started with Codiumate](https://youtu.be/tNs67CLbXOg?feature=shared)
+
+
 ## Prompts:
 
 ### HomePageTest

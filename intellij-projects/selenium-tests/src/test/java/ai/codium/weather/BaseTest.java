@@ -42,8 +42,7 @@ public class BaseTest {
 
     @BeforeEach
     public void setUp() {
-        // Set the path to the chromedriver executable
-        System.setProperty("webdriver.chrome.driver", "/Users/davidparry/app/chromedriver-mac-arm64/chromedriver");
+        System.setProperty("webdriver.chrome.driver", System.getenv("webdriver.chrome.driver"));
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         options.addArguments("--disable-web-security");
