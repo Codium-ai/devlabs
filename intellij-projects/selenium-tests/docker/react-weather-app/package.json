@@ -1,0 +1,53 @@
+{
+  "name": "react-weather-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "bootstrap5": "^1.1.9",
+    "framer-motion": "^8.5.5",
+    "grunt": "^1.6.1",
+    "jquery": "^3.7.1",
+    "jquery-mobile": "^1.5.0-alpha.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "5.0.1",
+    "react-swipeable": "^7.0.1",
+    "sweetalert2": "^11.12.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "PORT=4000 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "PORT=4000 nodemon --watch src --ext js,jsx,ts,tsx,json --exec \"npm start\""
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
