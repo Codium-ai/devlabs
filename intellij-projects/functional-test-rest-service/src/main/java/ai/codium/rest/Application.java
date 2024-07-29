@@ -61,11 +61,13 @@ public class Application {
 
     @GetMapping("/users")
     public ResponseEntity<List<UserProfile>> profiles() {
-        String sql = "SELECT id, name FROM USER_PROFILE";
+        String sql = "SELECT id, name, age, email FROM USER_PROFILE";
         List<UserProfile> users = jdbcTemplate.query(sql, (resultSet, rowNum) -> {
             UserProfile u = new UserProfile();
             u.setId(resultSet.getLong("id"));
             u.setName(resultSet.getString("name"));
+            u.setAge(resultSet.getInt("age"));
+            u.setEmail(resultSet.getString("email"));
             return u;
         });
         return ResponseEntity.ok(users);
@@ -85,6 +87,8 @@ public class Application {
                 UserProfile profile = new UserProfile();
                 profile.setId(1234L);
                 profile.setName("John Smith");
+                profile.setEmail("d@david.com");
+                profile.setAge(26);
                 System.out.println("Inserting a user " + profile);
                 repo.save(profile);
             }
@@ -98,6 +102,24 @@ class UserProfile {
     @Id
     private Long id;
     private String name;
+    private String email;
+    private int age;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 
     public String getName() {
         return name;

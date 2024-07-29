@@ -1,20 +1,18 @@
-# Spring Boot Functional Testing
+# Functional Testing a Restful Webservice
 
 ## Overview
 
 This Java Spring Boot project serves as a live coding demonstration for showcasing the capabilities of Codiumate
 plugin in Functional Testing a OpenAPI 3.0.1 Restful Service.
 
-## Features
-
-
+![Diagram of Profile Service](functional-testing.png)
 
 ## Usage
 
 1. Clone this repository to your local development environment.
 
    ```shell
-   git clone https://github.com/yourusername/devlabs.git
+   git clone git@github.com:Codium-ai/devlabs.git
    ```
 
 2. Set up your development environment with Codiumate and the necessary Java development tools.
@@ -28,17 +26,17 @@ plugin in Functional Testing a OpenAPI 3.0.1 Restful Service.
       ``` 
       curl --location 'http://localhost:8585/profile/users' 
       ```
-4. Focus on Application.java
-   - Add the api-docs.json to the additional context
-   - Add application.properties
-   - FunctionalSpec.groovy
-   - ProfileFunctionalSpec.groovy
+## Video Summary
+1. Context
+   - Focus on: ProfileFunctionalSpec.groovy
+   - Additional Context: api-docs.json
    
-5. Prompt:
+2. Prompt:
    ```
-   Add to this Spock Framework integration tests in ProfileFunctionalSpec extending the FunctionalSpec using the "when-where-then" format of the testing DSL. The tests should interact with a running
-   API application that is described in this OAS 3.0 standard in api-docs.json file , sending requests with dynamic data specified in the "where" data table.
+   Add to this Spock Framework integration tests in ProfileFunctionalSpec using the "when-where-then" format of the testing DSL. The integration tests should test the api definitions that are located in the api-docs.json file that is included, sending requests with dynamic data specified in the "where" data table.
    ```
+3. Add output to ProfileFunctionalSpec.groovy
+   - Run the functional tests of the API
 
 ## Resources
 - [Spring Boot Documentation](https://spring.io/projects/spring-boot)

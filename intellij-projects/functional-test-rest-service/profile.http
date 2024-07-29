@@ -1,0 +1,25 @@
+###
+
+# curl --location 'http://localhost:8585/profile/1234'
+GET http://localhost:8585/profile/1234
+
+###
+
+# curl --location 'http://localhost:8585/profile/' --header 'Content-Type: application/json' --data '{"id":1,"name":"Mike Meyers"}'
+POST http://localhost:8585/profile/
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Mike Testing Smith"
+}
+
+###
+
+
+# curl --location 'http://localhost:8585/profile/users'
+GET http://localhost:8585/profile/users
+
+###
+
+
