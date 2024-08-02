@@ -1,6 +1,6 @@
 package http
 
-import com.davidparry.refactor.Application
+import ai.codium.refactor.Application
 import org.springframework.boot.SpringApplication
 import org.springframework.context.ConfigurableApplicationContext
 import org.springframework.http.*
