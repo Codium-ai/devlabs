@@ -6,6 +6,7 @@ This Java Spring Boot project serves as a live coding demonstration for showcasi
 plugin in refactoring Java codebases, specifically within the Spring Boot framework. The aim is to illustrate how
 Codiumate plugins can assist developers in improving code quality, enhancing performance, and modularizing their Java
 applications.
+Follow along with the companion video [Codebase Resurrection: Revive and Refactor with AI](https://www.youtube.com/watch?v=yMQJUaUtiJo)
 
 ## Features
 
