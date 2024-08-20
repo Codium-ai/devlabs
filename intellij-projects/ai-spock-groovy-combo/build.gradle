@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'groovy'
+}
+
+group = 'ai.codium'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.spockframework:spock-core:2.3-groovy-4.0'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
