@@ -1,15 +1,16 @@
 plugins {
     id 'java'
     id 'groovy'
+    id 'idea'
 }
 
 group = 'ai.codium'
 version = '0.0.1-SNAPSHOT'
 
+
 java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
-    }
+    sourceCompatibility = '21'
+    targetCompatibility = '21'
 }
 
 repositories {
@@ -17,9 +18,16 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.spockframework:spock-core:2.3-groovy-4.0'
+
+    testImplementation 'org.apache.groovy:groovy:4.0.22'
+
+    testImplementation 'org.spockframework:spock-core:2.4-M1-groovy-4.0'
 }
 
 tasks.named('test') {
+    useJUnitPlatform()
+}
+
+tasks.withType(Test) {
     useJUnitPlatform()
 }

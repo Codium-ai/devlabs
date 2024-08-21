@@ -16,7 +16,6 @@
 ### Delivered in Example
 - Specification spock.lang.*
 - Fixture Methods [setupSpec(), cleanupSpec()] [setup(), cleanup()]
-- Feature Method Heart of the Specification what you are testing
 - Blocks setup -> stimulus -> response -> cleanup➰where
 - Conditions plain boolean expressions Groovy Truth
 - Interactions & Mocks behavior of objects not just checking state i.e. outcome
@@ -39,3 +38,11 @@ return 1 for even and 0 for odd. If number is 0 or negative number throw a runti
 For further reference, please consider the following sections:
 
 * [Spockframework](https://spockframework.org/)
+
+prompt
+```
+Implement the OddEvenCamp interface
+```
+Context
+ - oddeven.png image
+ - entire project
