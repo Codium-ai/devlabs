@@ -13,8 +13,8 @@ public class LoggerConfig {
         String logFilePath = null;
 
         // Parse flags for log level and log file path
-        if (flags.hasFlag("log")) {
-            String logLevelStr = flags.getFlagValue("log");
+        if (flags.getFlagValue("log").isPresent()) {
+            String logLevelStr = flags.getFlagValue("log").get();
             if ("DEBUG".equalsIgnoreCase(logLevelStr)) {
                 logLevel = Level.FINE;
             } else if ("INFO".equalsIgnoreCase(logLevelStr)) {
@@ -24,8 +24,8 @@ public class LoggerConfig {
             }
         }
 
-        if (flags.hasFlag("logfile")) {
-            logFilePath = flags.getFlagValue("logfile");
+        if (flags.getFlagValue("logfile").isPresent()) {
+            logFilePath = flags.getFlagValue("logfile").get();
         }
 
         // Configure root logger
@@ -38,7 +38,7 @@ public class LoggerConfig {
         }
 
         // Add console handler
-        if(flags.hasFlag("-consolelog")) {
+        if (flags.hasFlag("-consolelog")) {
             ConsoleHandler consoleHandler = new ConsoleHandler();
             consoleHandler.setLevel(logLevel);
             rootLogger.addHandler(consoleHandler);
