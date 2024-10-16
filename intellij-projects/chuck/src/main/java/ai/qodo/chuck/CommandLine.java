@@ -39,8 +39,7 @@ public class CommandLine {
     public void start() {
         LoggerConfig.configureGlobalLogger(flags);
         log.info(flags.toString());
-        Scanner scanner = new Scanner(System.in);
-        try {
+        try (Scanner scanner = new Scanner(System.in)) {
             while (true) {
                 System.out.println("Enter your name or (Q)uit:");
                 String input = scanner.nextLine();

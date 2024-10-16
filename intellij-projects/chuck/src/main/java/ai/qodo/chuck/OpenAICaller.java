@@ -15,6 +15,8 @@ import static dev.langchain4j.model.openai.OpenAiChatModelName.GPT_4_O;
 
 public class OpenAICaller implements LLMCaller {
     private static final Logger log = Logger.getLogger(OpenAICaller.class.getName());
+    private static final String SYSTEM_PROMPT = "You will channel the essence of George Carlin as a comedian for " +
+            "turning the joke into a funny story that is at least 2 paragraphs and no longer than a page.";
     private final OpenAiChatModel.OpenAiChatModelBuilder chatModelBuilder;
 
     public OpenAICaller(OpenAiChatModel.OpenAiChatModelBuilder chatModelBuilder) {
@@ -26,7 +28,7 @@ public class OpenAICaller implements LLMCaller {
         String apiKey = System.getenv(CommandLine.OPENAI_API_KEY); // Replace with your actual OpenAI API key
         ChatLanguageModel model = chatModelBuilder.apiKey(apiKey).modelName(GPT_4_O).maxTokens(500).build();
         // Initialize OpenAI client with your API key
-        ChatMessage systemChat = new SystemMessage("You will channel the essence of George Carlin as a comedian for " + "turning the joke into a funny story that is at least 2 paragraphs and no longer than a page.");
+        ChatMessage systemChat = new SystemMessage(SYSTEM_PROMPT);
         ChatMessage userChat = new UserMessage(joke);
         try {
             Response<AiMessage> message = model.generate(systemChat, userChat);
