@@ -1,9 +1,11 @@
 package ai.qodo.chuck;
+
 import java.io.IOException;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 public class LoggerConfig {
     public static void configureGlobalLogger(CommandFlags flags) {
         // Set default log level
@@ -15,6 +17,8 @@ public class LoggerConfig {
             String logLevelStr = flags.getFlagValue("log");
             if ("DEBUG".equalsIgnoreCase(logLevelStr)) {
                 logLevel = Level.FINE;
+            } else if ("INFO".equalsIgnoreCase(logLevelStr)) {
+                logLevel = Level.INFO;
             } else if ("ERROR".equalsIgnoreCase(logLevelStr)) {
                 logLevel = Level.SEVERE;
             }
@@ -34,10 +38,11 @@ public class LoggerConfig {
         }
 
         // Add console handler
-        ConsoleHandler consoleHandler = new ConsoleHandler();
-        consoleHandler.setLevel(logLevel);
-        rootLogger.addHandler(consoleHandler);
-
+        if(flags.hasFlag("-consolelog")) {
+            ConsoleHandler consoleHandler = new ConsoleHandler();
+            consoleHandler.setLevel(logLevel);
+            rootLogger.addHandler(consoleHandler);
+        }
         // Add file handler if log file path is provided
         if (logFilePath != null) {
             try {
